@@ -39,7 +39,7 @@
     margin: 1rem 0 4rem;
 }
 
-.projects > ul > li > .projects__info > a {
+.projects > ul > li > .projects__info > .leia-mais {
     font-weight: 500;
     text-decoration: underline;
 }
