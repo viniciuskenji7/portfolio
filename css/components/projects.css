@@ -29,6 +29,12 @@
     min-width: 40rem;
     max-width: 47rem;
     height: auto;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.projects > ul > li > .image > img:hover {
+    transform: scale(1.2);
 }
 
 .projects > ul > li > .projects__info {
@@ -48,6 +54,9 @@
     .projects > ul > li,
     .projects > ul > li > .projects__reversed-list {
         flex-direction: column;
+    }
+    .projects > ul > .li-reverse {
+        flex-direction: column-reverse;
     }
     .projects > ul > li > .projects__info {
         max-width: 66rem;
