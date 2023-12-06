@@ -5,6 +5,8 @@
   width: 100%;
   z-index: 10;
   background-color: var(--white);
+  color: var(--secondary-color);
+  transition: .5s;
 }
 .navbar > .navbar__content > a > .logo {
   font-size: 25px;
@@ -17,9 +19,8 @@
   padding: 3rem 4rem 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
-
 
 .navbar > .navbar__content > .navbar__links > li {
   display: inline-block;
@@ -38,14 +39,67 @@
 }
 
 .navbar.active {
-  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.1);
+  box-shadow: 0 0.2rem 0.5rem var(--secondary-color);
 }
 
 .navbar > .navbar__content > .navbar__mobile,
 .navbar > .navbar__content > .navbar__mobile > .mobile__links{
   display: none;
 }
+
+/* Config botao dark-mode */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.fa-moon{
+  color: hsl(52, 100%, 62%);
+}
+.fa-sun{
+  color: hsl(52, 100%, 62%);
+}
+
+.label {
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  cursor: pointer; 
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 5px;
+  position: relative;
+  height: 25px;
+  width: 45px;
+
+  transform: scale(1.1);
+}
+
+.label .ball {
+  background-color: var(--gray);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  height: 21px;
+  width: 22px;
+
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .botaoTema .label .ball {
+  transform: translateX(20px);
+}
+
+
 @media only screen and (max-width: 768px){
+  .tema {
+    display: none;
+  }
   .navbar > .navbar__content > .navbar__links {
     display: none;
   }
@@ -61,6 +115,8 @@
   .navbar > .navbar__content > .navbar__mobile.active > .mobile__links {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--white);
     width: 100%;
     position: absolute;
@@ -78,6 +134,16 @@
     display: block;
     text-align: center;
   }
+
+  .navbar > .navbar__content > .navbar__mobile.active > .mobile__links > li > .tema-mobile {
+    height: 30px;
+    width: 150px;
+    background-color: var(--white);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--secondary-color);
+  }
+  
 }
 
 

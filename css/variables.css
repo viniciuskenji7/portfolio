@@ -3,6 +3,7 @@
   --gray: #d9d9d9;
   --black: #000000;
   --primary-color: #02073e;
+  --color-title: #02073e;
   --secondary-color: #0f2137;
   --dark-secondary-color: #3c415c;
   --tertiary-color: #a6b1e1;
@@ -10,4 +11,11 @@
   --text-color: #343d48;
 
   --font-family: 'DM Sans', sans-serif;
+}
+:root.dark-mode {
+    --white: #12100ef3;
+    --primary-color: #E6E6E6;
+    --secondary-color: #fff;
+    --light-tertiary-color: #555555a1;
+    --color-title: #ffbf00;
 }

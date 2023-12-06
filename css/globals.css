@@ -8,6 +8,8 @@
 
 html {
   font-size: 62.5%;
+  background-color: var(--white);
+  transition: .7s;
 }
 
 body {
@@ -21,7 +23,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -48,6 +50,7 @@ p,
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 3.5rem;
+  color: var(--secondary-color);
 }
 
 p:not(:last-of-type),
@@ -66,7 +69,7 @@ p:not(:last-of-type),
 
 .btn.btn-primary {
   background-color: var(--dark-secondary-color);
-  color: var(--white);
+  color: #fff;
   font-weight: 400;
   font-size: 1.4rem;
 }
@@ -102,6 +105,7 @@ p:not(:last-of-type),
 .github {
   height: 35px;
   width: auto;
+  fill: var(--secondary-color);
 }
 
 @media only screen and (max-width: 1024px) {

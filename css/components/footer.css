@@ -10,6 +10,7 @@ footer > .footer__content {
 footer > .footer__content > .footer__contact span {
     display: block;
     font-weight: 500;
+    color: var(--secondary-color);
 }
 
 footer > .footer__content > ul > li {

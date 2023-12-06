@@ -9,6 +9,10 @@
     margin: 0 auto 6rem;
 }
 
+.projects > .projects__content > h2 > span {
+    color: var(--color-title);
+}
+
 .projects > ul > li {
     display: flex;
     justify-content: space-between;

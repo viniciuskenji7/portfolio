@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous" deferf></script>
 </head>
 
 <body>
@@ -29,6 +30,16 @@
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#footer">Contato</a></li>
             </ul>
+            <div class="tema">
+                <input type="checkbox" class="checkbox" name="tema" id="tema">
+                <div class="botaoTema">
+                    <label class="label" for="tema">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
             <div class="navbar__mobile">
                 <img src="assets/menu.svg" alt="menu" class="burguer"/>
                 <ul class="mobile__links">
@@ -37,6 +48,7 @@
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#projects">Projetos</a></li>
                     <li><a href="#footer">Contato</a></li>
+                    <li><button id="tema-mobile" class="tema-mobile">Modo Dark</button></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +57,7 @@
     <!-- Header -->
     <header id="header" class="max-width">
         <div class="header__left">
-            <h1>Ola eu sou Vinicius Kenji Desenvolvedor Front-end</h1>
+            <h1>Ola eu sou Vinicius Kenji,<span> Desenvolvedor Front-end</span></h1>
             <p>
                 Desenvolvedor web front-end com experiência em desenvolvimento
                 de aplicações web escaláveis e responsivas. Sou apaixonado por criar
@@ -147,7 +159,7 @@
     <!--Projetos-->
     <section id="projects" class="projects max-width">
         <div class="projects__content">
-            <h2 class="secondary-title">Projetos em Destaques</h2>
+            <h2 class="secondary-title">Projetos em <span>Destaques</span></h2>
             <p>
                 De ideias abstratas a projetos bem-sucedidos, aqui estão alguns dos
                 meus trabalhos mais recentes

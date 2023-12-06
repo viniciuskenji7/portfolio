@@ -9,6 +9,9 @@ header > .header__left {
     max-width: 62rem;
     flex: 1;
 }
+header > .header__left > h1 > span {
+    color: var(--color-title);
+}
 header > .header__left p{
     margin-top: 2rem;
     margin-bottom: 4rem;

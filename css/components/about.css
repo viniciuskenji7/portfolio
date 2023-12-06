@@ -9,6 +9,9 @@
     max-width: 40rem;
     flex: 1;
 }
+.about > .about__left > h2 {
+    color: var(--color-title);
+}
 .about > .about__left > p {
     margin: 1rem 0 2rem;
 }
